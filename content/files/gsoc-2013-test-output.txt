@@ -1,0 +1,102 @@
+Testing 100X with 2D binary random 90 true pixels
+Checking imerode from image package v2.0.0
+Cputime: 0.009081
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.024602
+Checking new version of imerode
+Cputime: 0.006240
+increase2old =  1.4551
+increase2dev =  3.9423
+
+Testing 100X with 2D binary random 10 true pixels
+Checking imerode from image package v2.0.0
+Cputime: 0.007360
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.022881
+Checking new version of imerode
+Cputime: 0.004160
+increase2old =  1.7692
+increase2dev =  5.5000
+
+Testing 100X with 3D binary random image but 2D SE
+Checking imerode from image package v2.0.0
+Computer says NO!
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.481470
+Checking new version of imerode
+Cputime: 0.079125
+increase2dev =  6.0849
+
+Testing 50X with 3D binary random image but 3D SE
+Checking imerode from image package v2.0.0
+Computer says NO!
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.518032
+Checking new version of imerode
+Cputime: 0.075605
+increase2dev =  6.8519
+
+Testing 5X with 7D binary random and 5D SE
+Checking imerode from image package v2.0.0
+Computer says NO!
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 13.940071
+Checking new version of imerode
+Cputime: 0.463229
+increase2dev =  30.093
+
+Testing 100X with 2D uint8 image
+Checking imerode from image package v2.0.0
+Cputime: 0.062324
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.043403
+Checking new version of imerode
+Cputime: 0.029322
+increase2old =  2.1255
+increase2dev =  1.4802
+
+Testing 50X with 3D uint8 image and 2D SE
+Checking imerode from image package v2.0.0
+Computer says NO!
+Checking imerode from development version (6db5e3c6759b)
+Computer says NO!
+Checking new version of imerode
+Cputime: 0.430347
+
+Testing 50X with 3D uint8 image and 3D SE
+Checking imerode from image package v2.0.0
+Cputime: 3.061951
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 1.725628
+Checking new version of imerode
+Cputime: 0.791569
+increase2old =  3.8682
+increase2dev =  2.1800
+
+Testing 10X with 7D uint8 image and 3D SE
+Checking imerode from image package v2.0.0
+Computer says NO!
+Checking imerode from development version (6db5e3c6759b)
+Computer says NO!
+Checking new version of imerode
+Cputime: 2.005325
+
+Testing 10X with 7D uint8 image and 7D SE
+Checking imerode from image package v2.0.0
+Cputime: 4.091456
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 2.940984
+Checking new version of imerode
+Cputime: 0.541634
+increase2old =  7.5539
+increase2dev =  5.4298
+
+Testing 100X with 2D uint8 image and larger SE
+Checking imerode from image package v2.0.0
+Cputime: 0.610678
+Checking imerode from development version (6db5e3c6759b)
+Cputime: 0.305579
+Checking new version of imerode
+Cputime: 0.087445
+increase2old =  6.9835
+increase2dev =  3.4945

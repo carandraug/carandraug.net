@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} — {{ page.title|striptags }}{%endblock%}
+
+{% block content %}
+  <article>
+    <header>
+      <h1>
+        <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark"
+           title="Permalink to {{ page.title|striptags }}">
+          {{ page.title }}
+        </a>
+      </h1>
+    </header>
+    {{ page.content }}
+  </article>
+{% endblock %}

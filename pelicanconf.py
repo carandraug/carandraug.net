@@ -46,10 +46,11 @@ DEFAULT_LANG = 'en'
 THEME = "./theme"
 THEME_STATIC_DIR = "_static"
 
-
-DEFAULT_PAGINATION = 10
+SUMMARY_MAX_LENGTH = 20
+DEFAULT_PAGINATION = 5
 
 USE_FOLDER_AS_CATEGORY = True
+SLUGIFY_SOURCE = 'basename'
 
 ARTICLE_URL = "posts/{date:%Y}/{date:%Y}-{date:%m}-{date:%d}-{slug}.html"
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%Y}-{date:%m}-{date:%d}-{slug}.html"
@@ -72,8 +73,8 @@ MENU_ITEMS = [
     ("Home", ""),
     ("Archives", "archives.html"),
     # ("Projects", "pages/projects/index.html"),
-    ("Thanks", "pages/thanks.html"),
-    ("About", "pages/about.html"),
+    ("TipJar", "pages/thanks.html"),
+    # ("About", "pages/about.html"),
     # Maybe some day add a Contact or Hire me page?
 ]
 

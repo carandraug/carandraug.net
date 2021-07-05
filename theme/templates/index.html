@@ -6,8 +6,16 @@
 
   {% for article in articles_page.object_list %}
     <article>
-      <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-      <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+      <header>
+        <h1>
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+             title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </h1>
+        <footer>
+          <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </footer>
       {# First item on first page #}
       {% if loop.first and not articles_page.has_previous() %}
         {{ article.content }}

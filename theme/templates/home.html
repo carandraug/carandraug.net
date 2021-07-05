@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ page.content }}
+  <article>
+    <h1>Recent Posts</h1>
+    {# TODO: consider introducing Published: x under the title. #}
+    <ul>
+      {% for article in articles[:DEFAULT_PAGINATION] %}
+        <li>
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+             title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>
+    See the <a href="{{ SITEURL }}/archives.html">Archives</a> for
+    older posts.
+    </p>
+  </article>
+{% endblock content %}

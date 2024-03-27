@@ -38,3 +38,8 @@ Or maybe Octave (imageGO)
 omero.jobs
 
 omero-scrips-processing
+
+Expenses compiler
+-----------------
+
+https://twitter.com/beamsontoast/status/1497193531101925378

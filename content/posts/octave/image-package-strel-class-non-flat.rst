@@ -1,5 +1,5 @@
-Octave and underage drinking
-############################
+image package: strel class, non-flat morphology and spatial transformations
+###########################################################################
 
 :tags: octave; image package; image processing;
 :date: 2013-01-08 06:45
@@ -19,7 +19,7 @@ strel class
 
 The ``strel`` class was something that I wanted to implement a long
 time ago but had never found the time. The name strel comes from
-*str*ucturing *el*ement (SE), the shapes used in morphological
+*str*\ ucturing *el*\ ement (SE), the shapes used in morphological
 operations such as dilation and erosion.  I have only seen it as a
 standard way to create SEs, but is actually much more.  Specially, SE
 decomposition can have a really nice increase in performance.

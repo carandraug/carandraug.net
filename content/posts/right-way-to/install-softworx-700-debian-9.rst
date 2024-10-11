@@ -1,4 +1,4 @@
-Install SoftWoRx 7.0.0 in Debian 9
+Install SoftWoRx 7.0.0 on Debian 9
 ##################################
 
 :tags: microscopy; sysadmin;
@@ -152,7 +152,7 @@ Dependencies
 building libXp from source
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-libXp is not packaged in Debian 9 (there are libxp packages for Debian
+libXp is not packaged on Debian 9 (there are libxp packages for Debian
 8 and 10 though) so it needs to be built from source.
 
 ::

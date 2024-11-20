@@ -148,6 +148,35 @@ and update the menu system::
 .. image:: {static}/files/ut-goty-on-gnome-shell.jpg
 
 
+Fixing screen resolution
+------------------------
+
+The first time I started UT, the screen resolution was off so that the
+the bottom left quadrant of the game window covered the whole monitor.
+None of the menus were visible.  This is due to the default settings
+in ``~/.utpg/System/UnrealTournament.ini``.  Exiting the game cleanly
+seems to automatically correct the configuration file [3]_.
+
+Exiting the game cleanly can be tricky if you can't see the menus to
+click but these are the steps to do it from the keyboard:
+
+1. press `Esc` to skip the intro (or let it play to the end)
+
+2. The bottom left corner should read "Start a new game, load a game,
+   or quit".  This means that the "Game" menu bar is open.  Do
+   nothing.  If it reads "Use the game menu to start a new game",
+   click `Alt+g` to open the Game menu.
+
+3. Press `Shift+q` to select the "Quit" entry.  A confirm quit dialog
+   will appear which may not be on the visible part of the viewport.
+
+4. If the Quit dialog is visible and the "Yes" button is visible,
+   click on it.  If the "Yes" button is not visible, press `Enter`.
+
+5. You should have just exited UT.  The next time you start the
+   resolution should have been fixed.
+
+
 .. [1] I guess a case can also be made to use `com.epicgames` as the
        provider.  I'm using OldUnreal because this is the version of
        the game distributed by them.
@@ -172,3 +201,9 @@ and update the menu system::
           the SuperUser question "Where should I place .desktop files
           for 3rd-party apps installed in /opt?"
           <https://superuser.com/questions/1782591/where-should-i-place-desktop-files-for-3rd-party-apps-installed-in-opt>`__.
+
+.. [3] Restoring ``~/.utpg/System/UnrealTournament.ini`` after exiting
+       UT cleanly brings the problem back.  The diff between before
+       and after the clean exit show many lines changed but I couldn't
+       fix the issue by manually setting any logical subset of those
+       options.

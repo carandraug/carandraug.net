@@ -64,8 +64,8 @@ just copy the files to the right places so that's why I'm doing here.
 The game expects a structure with all games files under a single
 directory.  Following the `Linux Filesystem Hierarchy Standard (FHS)
 <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html>`__, this
-means it fits best under `/opt/<provider>/<package>`.  I'm installing
-it there with `com.oldunreal` as the `<provider>` [1]_.
+means it fits best under ``/opt/<provider>/<package>``.  I'm
+installing it there with ``com.oldunreal`` as the ``<provider>`` [1]_.
 
 ::
 
@@ -129,7 +129,7 @@ Application Desktop entry
 To get UT appear on the menus you need a `desktop entry file
 <https://specifications.freedesktop.org/desktop-entry-spec/latest/>`__.
 Place this file on
-`/usr/local/share/applications/com.oldunreal.ut-goty.desktop` [2]_::
+``/usr/local/share/applications/com.oldunreal.ut-goty.desktop`` [2]_::
 
     [Desktop Entry]
     Type=Application
@@ -177,29 +177,29 @@ click but these are the steps to do it from the keyboard:
    resolution should have been fixed.
 
 
-.. [1] I guess a case can also be made to use `com.epicgames` as the
+.. [1] I guess a case can also be made to use ``com.epicgames`` as the
        provider.  I'm using OldUnreal because this is the version of
        the game distributed by them.
 
 .. [2] It is not clear to me the best place to place desktop entries
-       for stuff installed under `/opt`.  On one hand, the system-wide
-       location for application desktop entries installed locally,
-       i.e., not managed by the OS package-manager, is
-       `/usr/local/share/applications`.  I feel that is a bit weird to
-       place stuff from outside the `/usr/local` tree there but there
-       isn't a better default place.
+       for stuff installed under ``/opt``.  On one hand, the
+       system-wide location for application desktop entries installed
+       locally, i.e., not managed by the OS package-manager, is
+       ``/usr/local/share/applications``.  I feel that is a bit weird
+       to place stuff from outside the ``/usr/local`` tree there but
+       there isn't a better default place.
 
-       1. Instead of seeing `/usr/local/share/applications` as the
-          "place for desktop entries of stuff in the `/usr/local`
+       1. Instead of seeing ``/usr/local/share/applications`` as the
+          "place for desktop entries of stuff in the ``/usr/local``
           tree", to see it as the "place for desktop entries of
           locally installed stuff" which maybe is closer to the
           intended reading of the FHS.
 
        2. Setup the system to read look for desktop entries in other
-          directories by adding a shell script to `/etc/profile.d/`
-          which sets `XDG_DATA_DIRS` accordingly.  See `this answer to
-          the SuperUser question "Where should I place .desktop files
-          for 3rd-party apps installed in /opt?"
+          directories by adding a shell script to ``/etc/profile.d/``
+          which sets ``XDG_DATA_DIRS`` accordingly.  See `this answer
+          to the SuperUser question "Where should I place .desktop
+          files for 3rd-party apps installed in /opt?"
           <https://superuser.com/questions/1782591/where-should-i-place-desktop-files-for-3rd-party-apps-installed-in-opt>`__.
 
 .. [3] Restoring ``~/.utpg/System/UnrealTournament.ini`` after exiting

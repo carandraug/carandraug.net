@@ -31,10 +31,12 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 PATH = "content"
 
 STATIC_PATHS = [
-    "static/.htaccess"
+    "static/.htaccess",
+    "static/_redirects",  # Netlify redirects file
 ]
 EXTRA_PATH_METADATA = {
     "static/.htaccess": {"path": ".htaccess"},
+    "static/_redirects": {"path": "_redirects"},
 }
 
 
